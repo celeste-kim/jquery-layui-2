@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="head1">
+        <div class="h_c">
+            <div class="hl">
+                <p>北京 <span>[切换城市]</span></p>
+            </div>
+            <div class="hr">
+                <p><a href="javascript:void(0)">登录 / 注册</a></p>
+                <p><a href="#">个人中心 <img src="images/index/u113.png" /></a></p>
+                <p><a href="#">商家中心 <img src="images/index/u113.png" /></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="h_se">
+        <div class="s_logo">
+            <img id="u135_img" class="img " src="images/index/zhaopin4.jpg" width="80px" height="70px">
+        </div>
+        <div class="s_search">
+            <input type="text" id="ss" placeholder="请输入职位..." />
+            <input type="button" id="sb" value="搜职位" />
+            <!-- <img  id="si" src="images/index/u138.png" /> -->
+            <ul id="job_search">
+                <!-- <li><a href="javascript:void(0)">收营员</a></li>
+                <li><a href="javascript:void(0)">收营员</a></li>
+                <li><a href="javascript:void(0)">收营员</a></li>
+                <li><a href="javascript:void(0)">收营员</a></li>
+                <li><a href="javascript:void(0)">收营员</a></li> -->
+            </ul>
+        </div>
+ 
+    </div>
+    <div class="hm">
+        <div class="hm_1">
+            <div class="hm_1_l">职位：</div>
+            <div class="hm_1_r">
+                <ul id="job">
+                    <li><a href="javascript:void(0)"   class="s" id="job_one">全部</a></li>
+                </ul>
+            </div>
+            <div class="c"></div>
+        </div>
+        <div class="hm_1">
+            <div class="hm_1_l">地点：</div>
+            <div class="hm_1_r">
+                <ul id="place">
+                    <li ><a href="javascript:void(0)"   class="s" id="place_one">全部</a></li>
+                </ul>
+            </div>
+            <div class="c"></div>
+        </div>
+        <div class="hm_1">
+            <div class="hm_1_l">福利：</div>
+            <div class="hm_1_r">
+                <ul class="welfare" id="welfare">
+                    <li><a href="javascript:void(0)"   class="s" id="welfare_one">全部</a></li>
+                    <!-- <li><a href="javascript:void(0)">五险一金</a></li>
+                    <li><a href="javascript:void(0)">五险一金</a></li>
+                    <li><a href="javascript:void(0)">五险一金</a></li>
+                    <li><a href="javascript:void(0)">五险一金</a></li>
+                    <li><a href="javascript:void(0)">五险一金</a></li> -->
+                    
+                </ul>
+            </div>
+            <div class="c"></div>
+        </div>
+        <div class="hm_1 b">
+            <div class="hm_1_l">已选：</div>
+            <div class="hm_1_r">
+                <div class="yx" id="selected">全部</div>
+            </div>
+            <div class="c"></div>
+        </div>
+    </div>
+
+    <div id="con_menu">
+       <!--  <div class="m" id="main_content">
+            <h4>190/天上一休一连锁超市急招营业员</h4>
+            <div class="m_1">4000-5000 元/月</div>
+            <div class="w">
+            <div class="m_2 c1">五险一金</div>
+            <div class="m_2 c2">包吃</div>
+            <div class="m_2 c3">包住</div>
+            </div>
+            <div class="m_9">
+                <p>工作时间：全职工作</p>
+                <p>工作类型：收银员</p>
+                <p>招聘人数：10人</p>
+                <p>工作地点：海淀知春路</p>
+            </div>
+            <div class="m_3">一键报名</div>
+        </div> -->
+    </div>
+    <div class="ym">
+        <ul>
+            <li>&lt;</li>
+            <li>1</li>
+            <li>2</li>
+            <li>...</li>
+            <li>10</li>
+            <li>&gt;</li>
+        </ul>
+    </div>
+
+    <div class="f" style=" border:1px solid #999;">
+        
+        ©2015-2019 ####################有限公司 ##ICP备#############号 ##公网安备###############号 联系电话：####-###########
+    </div>
+    <!-- 模态框 -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">快速报名</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-2 ml-4">姓名</label>
+                        <input type="text" class="form-control col-8"  placeholder="请输入姓名" name="realname">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-2 ml-4">用户名</label>
+                        <input type="text" class="form-control col-8"  placeholder="请输入用户名" name="username">
+                    </div>
+                     <div class="form-group row">
+                        <label for="exampleFormControlSelect1" class="col-2 ml-4">性别</label>
+                        <select class="form-control col-8" id="gender">
+                          <option>男</option>
+                          <option>女</option>
+                        </select>
+                      </div>
+                    <div class="form-group row">
+                        <label class="col-2 ml-4">出生年月</label>
+                        <input type="text" class="form-control col-8"  placeholder="请输入出生年月" name="birth">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-2 ml-4">最高学历</label>
+                        <input type="text" class="form-control col-8"  placeholder="请输入最高学历" name="education">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-2 ml-4">工作经验</label>
+                        <input type="text" class="form-control col-8"  placeholder="请输入工作经验" name="workTime">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-2 ml-4">手机号</label>
+                        <input type="text" class="form-control col-8"  placeholder="请输入手机号" name="telephone">
+                    </div>
+                </form>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary"
+            id="btn_add">提交</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 模态框结束 -->
+    <!-- toast -->
+    <div class="toast" style="position: fixed; top: 5rem; right: 3rem; width:200px">
+      <div class="toast-header bg-primary text-light">
+        <i class="rounded mr-2 fa fa-check-circle"></i>
+        <strong class="mr-auto">success</strong>
+        <button type="button" id="toast_close" class="ml-2 mb-1 close">
+           <span id="close" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body"></div>
+    </div>
+    <!-- /toast -->
+</body>
+</html>
